@@ -1,0 +1,14 @@
+# Render "Blueprint": creates the free web service with one click (Dashboard -> New -> Blueprint).
+services:
+  - type: web
+    name: bixtech
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /healthz
+    envVars:
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: ADMIN_PASSWORD   # Render asks for this value when you apply the Blueprint
+        sync: false

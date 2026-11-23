@@ -1,0 +1,9 @@
+{
+  "name": "bixtech-auth",
+  "version": "1.0.0",
+  "description": "BixTech website with real OAuth 2.0 social login (no npm dependencies)",
+  "main": "server.js",
+  "scripts": { "start": "node server.js", "test": "node --test" },
+  "engines": { "node": ">=18" },
+  "private": true
+}
